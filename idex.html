@@ -1,27 +1,228 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <!-- daisyUI 4.6.0 CSS file + Tailwind CSS CDN script: -->
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Font Awesome Kit -->
-  <script src="https://kit.fontawesome.com/87f3163c5b.js" crossorigin="anonymous"></script>
-  <!-- Manrope google font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <!-- Custom CSS style -->
-  <style>
-    .manrope-font {
-      font-family: 'Manrope', sans-serif;
-    }
-  </style>
+    <!-- daisyUI 4.6.0 CSS file + Tailwind CSS CDN script: -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/87f3163c5b.js" crossorigin="anonymous"></script>
+    <!-- Open sans google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .openSans-font {
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
     <title>Riza Fashion Ltd</title>
 </head>
-<body>
+
+
+<body class="openSans-font">
+
+    <!-- Header Part -->
+
+    <header class="w-full">
+        <!-- navigation bar -->
+        <nav class="  fixed z-20 w-full shadow-sm top-0 py-2 lg:py-4 text-gray-700 transition duration-200 ease-in-out bg-white innerSticky">
+            <div class="w-full   lg:w-4/5 flex justify-between items-center px-4   mx-auto ">
+                <div class="flex justify-center items-center gap-16">
+                    <div>
+                        <img class="w-20 h-8 lg:w-32 lg:h-12" src="images/logo.svg" alt="">
+                    </div>
+                    <div>
+                        <ul class="hidden lg:flex justify-center items-center gap-8">
+                            <li><a href="#" class="text-black">Home</a></li>
+                            <li><a href="#" class="text-black">Home</a></li>
+                            <li><a href="#" class="text-black">Shop</a></li>
+                            <li><a href="#" class="text-black">Blog</a></li>
+                            <li><a href="#" class="text-black">About us</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="flex justify-center items-center gap-8">
+                    <i class="fa-solid fa-magnifying-glass hidden lg:block cursor-pointer"></i>
+                    <a href="#" class="hidden lg:block">Sign in/Up</a>
+                    <i class="fa-regular lg:hidden fa-user"></i>
+                    <i class="fa-solid cursor-pointer fa-cart-shopping hidden lg:block"></i>
+                    <i class="fa-solid fa-bars lg:hidden"></i>
+                </div>
+
+                <div class=" fixed z-20 w-full shadow-sm bottom-0 py-4 lg:py-4 text-gray-700 transition duration-200 ease-in-out bg-white innerSticky  flex justify-around lg:hidden items-center ">
+                    <i class="fa-solid fa-magnifying-glass cursor-pointer"></i>
+                    <i class="fa-solid fa-bars cursor-pointer"></i>
+                    <i class="fa-solid fa-house cursor-pointer"></i>
+                    <i class="fa-regular fa-user cursor-pointer"></i>
+                    <i class="fa-solid cursor-pointer fa-cart-shopping  "></i>
+                    
+                </div>
+
+
+
+
+            </div>
+
+        </nav>
+
+        <!-- Banner part -->
+        <div class="w-4/5 mx-auto h-auto mt-16 lg:mt-28">
+
+            <div class="lg:grid flex flex-col lg:grid-cols-9 lg:grid-rows-2 gap-6">
+                <div class="lg:col-span-5  cursor-pointer "><img src="images/banner-1.webp" alt=""></div>
+                <div class="col-span-2 cursor-pointer "><img class="h-full " src="images/banner-2.webp" alt=""></div>
+                <div class="col-span-2 cursor-pointer"><img class="h-full" src="images/banner-3.webp" alt=""></div>
+                <div class="col-span-2 cursor-pointer"><img class="h-full" src="images/banner-4.webp" alt=""></div>
+                <div class="col-span-2 cursor-pointer"><img class="h-full" src="images/banner-5.webp" alt=""></div>
+                <div class="lg:col-span-5  cursor-pointer"> <img src="images/banner-6.webp" alt=""></div>
+
+
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!-- Main Part -->
+
+    <main>
+        <!-- Flash Sale -->
+        <section class="w-full">
+            <div class="w-4/5 mx-auto mt-16 p-6 border-2 rounded-xl">
+
+                <div class="flex   lg:flex-row flex-col justify-between items-center">
+                    <div class=" sm:text-center">
+                        <h1 class="font-extrabold text-2xl">Flash Sale</h1>
+                    </div>
+                    <div class="  grid grid-flow-col lg:gap-5 text-center auto-cols-max">
+                        <div class="flex flex-col p-2   text-neutral-content">
+                            <span class=" bg-[#161B21] p-2 rounded-xl countdown lg:text-3xl">
+                                <span style="--value:15;"></span>
+                            </span>
+                            <p class="text-[#161B21] font-bold">Days</p>
+                        </div>
     
+                        <div class="flex flex-col p-2  items-center  text-neutral-content">
+                            <span class=" bg-[#161B21] p-2 rounded-xl countdown lg:text-3xl">
+                                <span style="--value:10;"></span>
+                            </span>
+                            <p class="text-[#161B21] font-bold">Hours</p>
+                        </div>
+                        <div class="flex flex-col p-2   text-neutral-content">
+                            <span class=" bg-[#161B21] p-2 rounded-xl countdown lg:text-3xl">
+                                <span style="--value:15;"></span>
+                            </span>
+                            <p class="text-[#161B21] font-bold">Min</p>
+                        </div>
+                        <div class="flex flex-col p-2  items-center  text-neutral-content">
+                            <span class="  bg-[#161B21] p-2 rounded-xl countdown lg:text-3xl">
+                                <span style="--value:15;"></span>
+                            </span>
+                            <p class="text-[#161B21] font-bold text-center">Second</p>
+                        </div>
+    
+                    </div>
+                </div>
+
+                <div class="  flex flex-col lg:grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 lg:grid-rows-3 grid-rows-4">
+                    <div class=" cursor-pointer hover:shadow-md rounded-xl p-3 flex flex-col justify-between items-start lg:gap-4 ">
+                        <img class="rounded-xl bg-gray-300 object-cover rounded-s-md transition duration-150 ease-linear transform group-hover:scale-105"" src="images/products/p-30-md.webp" alt="">
+                        <h1 class="lg:text-2xl font-bold">Adidas Shoes Black</h1>
+                        <p>Men Black top sleeveless gown</p>
+                        <h2 class="text-xl font-bold">$45.00 <span class="line-through text-gray-400 pl-4">$99.99</span></h2>
+                    </div>
+                    <div class=" cursor-pointer hover:shadow-md rounded-xl p-3 flex flex-col justify-between items-start lg:gap-4 ">
+                        <img class="rounded-xl hover:" src="images/products/p-14-md.webp" alt="">
+                        <h1 class="lg:text-2xl font-bold">Adidas Shoes Black</h1>
+                        <p>Men Black top sleeveless gown</p>
+                        <h2 class="text-xl font-bold">$45.00 <span class="line-through text-gray-400 pl-4">$99.99</span></h2>
+                    </div>
+                    <div class=" cursor-pointer hover:shadow-md rounded-xl p-3 flex flex-col justify-between items-start lg:gap-4 ">
+                        <img class="rounded-xl hover:" src="images/products/p-16-md.webp" alt="">
+                        <h1 class="lg:text-2xl font-bold">Adidas Shoes Black</h1>
+                        <p>Men Black top sleeveless gown</p>
+                        <h2 class="text-xl font-bold">$45.00 <span class="line-through text-gray-400 pl-4">$99.99</span></h2>
+                    </div>
+                    <div class=" cursor-pointer hover:shadow-md rounded-xl p-3 flex flex-col justify-between items-start lg:gap-4 ">
+                        <img class="rounded-xl hover:" src="images/products/p-27-md.webp" alt="">
+                        <h1 class="lg:text-2xl font-bold">Adidas Shoes Black</h1>
+                        <p>Men Black top sleeveless gown</p>
+                        <h2 class="text-xl font-bold">$45.00 <span class="line-through text-gray-400 pl-4">$99.99</span></h2>
+                    </div>
+                    <div class=" cursor-pointer hover:shadow-md rounded-xl p-3 flex flex-col justify-between items-start lg:gap-4 ">
+                        <img class="rounded-xl hover:" src="images/products/p-25-md.webp" alt="">
+                        <h1 class="lg:text-2xl font-bold">Adidas Shoes Black</h1>
+                        <p>Men Black top sleeveless gown</p>
+                        <h2 class="text-xl font-bold">$45.00 <span class="line-through text-gray-400 pl-4">$99.99</span></h2>
+                    </div>
+                    <div class=" cursor-pointer hover:shadow-md rounded-xl p-3 flex flex-col justify-between items-start lg:gap-4 ">
+                        <img class="rounded-xl hover:" src="images/products/p-26-md.webp" alt="">
+                        <h1 class="lg:text-2xl font-bold">Adidas Shoes Black</h1>
+                        <p>Men Black top sleeveless gown</p>
+                        <h2 class="text-xl font-bold">$45.00 <span class="line-through text-gray-400 pl-4">$99.99</span></h2>
+                    </div>
+                    <div class=" cursor-pointer hover:shadow-md rounded-xl p-3 flex flex-col justify-between items-start lg:gap-4 ">
+                        <img class="rounded-xl hover:" src="images/products/p-8-md.webp" alt="">
+                        <h1 class="lg:text-2xl font-bold">Adidas Shoes Black</h1>
+                        <p>Men Black top sleeveless gown</p>
+                        <h2 class="text-xl font-bold">$45.00 <span class="line-through text-gray-400 pl-4">$99.99</span></h2>
+                    </div>
+                    <div class=" cursor-pointer hover:shadow-md rounded-xl p-3 flex flex-col justify-between items-start lg:gap-4 ">
+                        <img class="rounded-xl hover:" src="images/products/p-27-md.webp" alt="">
+                        <h1 class="lg:text-2xl font-bold">Adidas Shoes Black</h1>
+                        <p>Men Black top sleeveless gown</p>
+                        <h2 class="text-xl font-bold">$45.00 <span class="line-through text-gray-400 pl-4">$99.99</span></h2>
+                    </div>
+                    <div class=" cursor-pointer hover:shadow-md rounded-xl p-3 flex flex-col justify-between items-start lg:gap-4 ">
+                        <img class="rounded-xl hover:" src="images/products/p-30-md.webp" alt="">
+                        <h1 class="lg:text-2xl font-bold">Adidas Shoes Black</h1>
+                        <p>Men Black top sleeveless gown</p>
+                        <h2 class="text-xl font-bold">$45.00 <span class="line-through text-gray-400 pl-4">$99.99</span></h2>
+                    </div>
+                </div>
+
+                
+             
+
+
+
+            </div>
+        </section>
+
+        <!-- Carousal  -->
+        <section class="my-6">
+            <div class="carousel w-full ">
+                <div id="item1" class="carousel-item size-1/2">
+                  <img src="images/products/banner-2.webp" class="w-full" />
+                </div> 
+                <div id="item2" class="carousel-item size-1/2">
+                  <img src="images/products/banner-3.webp" class="w-full" />
+                </div> 
+                <div id="item3" class="carousel-item size-1/2">
+                  <img src="images/products/banner-1.webp" class="w-full" />
+                </div> 
+               
+              </div> 
+              <div class="flex justify-center w-full py-2 gap-2">
+                <a href="#item1" class="btn btn-xs">1</a> 
+                <a href="#item2" class="btn btn-xs">2</a> 
+                <a href="#item3" class="btn btn-xs">3</a> 
+               
+              </div>
+        </section>
+
+    </main>
+
+    
+
+
 </body>
+
 </html>
